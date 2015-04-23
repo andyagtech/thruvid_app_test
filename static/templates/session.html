@@ -11,17 +11,18 @@
                 <p>{{session.description}}</p>
             </div>
             <div class="item tabs tabs-secondary tabs-icon-left">
-                <a class="tab-item" ng-click="push()">
-                    <i class="icon ion-thumbsup"></i>
-                    Like
+                <a class="tab-item" ng-click="complete_task()">
+                    <i class="icon ion-checkmark"></i>
+                    <!-- <i class="icon ion-ios-checkmark-outline"></i> -->
+                    Complete
                 </a>
-                <a class="tab-item">
+                <a class="tab-item" ng-click="open_dialog()">
                     <i class="icon ion-chatbox"></i>
                     Comment
                 </a>
-                <a class="tab-item" ng-click="share()">
-                    <i class="icon ion-share"></i>
-                    Share
+                <a class="tab-item" ng-click="remind()">
+                    <i class="icon ion-clock"></i>
+                    Remind
                 </a>
             </div>
         </div>

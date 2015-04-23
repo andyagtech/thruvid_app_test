@@ -2,7 +2,7 @@ angular.module('conference.profiles', ['conference.config'])
 
     .config(function ($stateProvider, FB_APP_ID) {
 
-        openFB.init({appId: FB_APP_ID});
+//        openFB.init({appId: FB_APP_ID}); //
 
         $stateProvider
 
@@ -18,7 +18,8 @@ angular.module('conference.profiles', ['conference.config'])
     })
 
     .controller('ProfileCtrl', function ($scope) {
-        openFB.api({
+
+/*		openFB.api({
             path: '/me',
             params: {fields: 'id,name'},
             success: function (user) {
@@ -30,4 +31,5 @@ angular.module('conference.profiles', ['conference.config'])
                 alert('Error connecting to Facebook. Did you log in?');
             }
         });
+*/		
     });
